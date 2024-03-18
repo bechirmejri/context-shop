@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import { DUMMY_PRODUCTS } from "../dummy-products.js";
-
+import { toast } from "react-toastify";
 const CartContext = createContext();
-
+const notify = () => toast("Wow so easy !");
 export function ParentContext({ children }) {
   // Shopping cart state
   const [shoppingCart, setShoppingCart] = useState({
@@ -34,7 +34,8 @@ export function ParentContext({ children }) {
           quantity: 1,
         });
       }
-
+ 
+ notify()
       return {
         items: updatedItems,
       };
@@ -72,6 +73,7 @@ export function ParentContext({ children }) {
     handleUpdateCartItemQuantity,
     setShoppingCart,
     DUMMY_PRODUCTS,
+    notify,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

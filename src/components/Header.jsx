@@ -30,7 +30,6 @@ const Header = () => {
             <button
               onClick={handleModalOpen}
               className="btn text-lg bg-sky-400  font-bold">
-              Cart
               {cartQuantity > 0 && (
                 <span className="indicator-item badge badge-success text-white">
                   {cartQuantity}+

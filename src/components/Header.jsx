@@ -10,7 +10,8 @@ const Header = () => {
   function handleModalOpen() {
     document.getElementById("cart-modal").showModal();
   }
-
+ 
+    
   return (
     <>
       <nav className="navbar py-3 lg:px-20 mb-10 bg-sky-200 sticky top-0 z-50 bg-ta">
@@ -23,7 +24,7 @@ const Header = () => {
               height={100}
               width={70}
             />
-            <h1 className=" text-4xl text-cyan-950 font-bold">Context Shop</h1>
+            <h1 className=" text-4xl text-cyan-950 font-bold"> Bechir Shop</h1>
           </div>
           <div className="indicator">
             <button

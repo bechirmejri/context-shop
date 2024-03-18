@@ -3,7 +3,7 @@ import Shop from "./components/Shop.jsx";
 
 function App() {
   return (
-    <div className="bg-fuchsia-100">
+    <div className="bg-sky-50">
       <Header />
       <Shop />
     </div>

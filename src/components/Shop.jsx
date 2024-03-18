@@ -6,7 +6,7 @@ export default function Shop() {
 
   return (
     <section className="flex flex-col items-center gap-20">
-      <h1 className="text-fuchsia-800 text-4xl font-bold text-center">
+      <h1 className="text-sky-800 text-4xl font-bold text-center">
         Context Outfits for Every Occasion
       </h1>
 

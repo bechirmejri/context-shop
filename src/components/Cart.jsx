@@ -23,20 +23,20 @@ const Cart = () => {
             return (
               <li
                 key={item.id}
-                className="flex justify-between items-center bg-fuchsia-200  rounded-lg p-3">
+                className="flex justify-between items-center bg-sky-200  rounded-lg p-3">
                 <div>
                   <span>{item.name}</span>
                   <span> ({formattedPrice})</span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <button
-                    className="btn btn-sm bg-fuchsia-800 text-slate-100 text-lg font-bold hover:text-slate-900 hover:bg-fuchsia-400"
+                    className="btn btn-sm bg-sky-800 text-slate-200 text-lg font-bold hover:text-slate-900 hover:bg-sky-400"
                     onClick={() => handleUpdateCartItemQuantity(item.id, -1)}>
                     -
                   </button>
                   <span className="text-lg">{item.quantity}</span>
                   <button
-                    className="btn btn-sm text-slate-100 bg-fuchsia-800 text-lg font-bold hover:text-slate-900 hover:bg-green-400"
+                    className="btn btn-sm text-slate-100 bg-sky-800 text-lg font-bold hover:text-slate-900 hover:bg-green-400"
                     onClick={() => handleUpdateCartItemQuantity(item.id, 1)}>
                     +
                   </button>
@@ -48,7 +48,7 @@ const Cart = () => {
       )}
       <div className="mt-4 flex gap-1 justify-end items-center">
         <p>Cart Total:</p>
-        <p className="font-bold text-lg underline underline-offset-4 text-fuchsia-700">
+        <p className="font-bold text-lg underline underline-offset-4 text-sky-700">
           {formattedTotalPrice}
         </p>
       </div>
